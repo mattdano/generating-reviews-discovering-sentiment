@@ -201,7 +201,7 @@ class Model(object):
             Fs = np.concatenate(Fs, axis=1).transpose(1, 0, 2)
             return Fs
 
-         def sequence_features(x, index):
+        def sequence_features(x, index):
             x = preprocess(x)
             n = len(x)
             smb = np.zeros((2, 1, hps.nhidden))
